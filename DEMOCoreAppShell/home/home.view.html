@@ -1,0 +1,1666 @@
+﻿<!--Application Branding--> 
+<!-- /////////////////////////////////////////////////////////////////// -->
+<nav class="navbar navbar-default">
+
+<!--Application Branding--> 
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="navbar-header">
+<div class="pull-left">
+<a href="#">
+<img src="images/insightBox.png" style="height: 50px;" alt="DEMO Logo">
+</a>
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Application Branding--> 
+
+
+
+<!--Application Top Nav--> 
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="pull-right">
+<ul class="nav nav-pills">
+<!--Language Configuration--> 
+<li role="presentation">
+<a class="LanguagePreference" data-placement="bottom" data-toggle="collapse" href="view2/#collapseExample" title="Language Preference" aria-expanded="false" aria-controls="collapseExample">
+<i class="fa fa-lg fa-fw fa fa-globe fa-2"></i>
+</a>
+
+<div id="popover_content_wrapper" style="display: none">
+  <div>Select your language</div>
+</div>
+
+</li>
+<!--At a glance--> 
+<li role="presentation">
+<a class="ataglance" data-placement="bottom" data-toggle="collapse" href="view2/#collapseExample2" title="Info" aria-expanded="false" aria-controls="collapseExample2">
+<i class="fa fa-lg fa-fw fa fa-info-circle fa-2"></i>
+</a>
+
+<div id="popover_content_wrapper2" style="display: none">
+  <div>2</div>
+</div>
+
+</li>
+<!--Application Help-->   
+<li role="presentation">
+<a class="help" data-placement="bottom" data-toggle="collapse" href="view2/#collapseExample3" title="Help" aria-expanded="false" aria-controls="collapseExample3">
+<i class="fa fa-lg fa-fw fa fa-question-circle fa-2"></i>
+</a>
+
+<div id="popover_content_wrapper3" style="display: none">
+  <div>3</div>
+</div>
+
+</li>
+<!--User Panel--> 
+<li role="presentation">
+<a class="user" data-placement="bottom" data-toggle="collapse" href="view2/#collapseExample4" title="User" aria-expanded="false" aria-controls="collapseExample4">
+<i class="fa fa-lg fa-fw fa fa-user fa-2"></i>
+</a>
+
+<div id="popover_content_wrapper4" style="display: none">
+  <div>4</div>
+</div>
+
+</li>
+<!--Application Settings--> 
+<li role="presentation">
+<a class="settings" data-placement="bottom" data-toggle="collapse" href="view2/#collapseExample5" title="Settings" aria-expanded="false" aria-controls="collapseExample5">
+<i class="fa fa-lg fa-fw fa fa-cog fa-2"></i>
+</a>
+
+<div id="popover_content_wrapper5" style="display: none">
+  <div>5</div>
+</div>
+
+</li>
+</ul>
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Application Top Nav--> 
+</div>
+
+</nav> 
+<!-- /////////////////////////////////////////////////////////////////// --> 
+<!--Application Branding--> 
+
+
+
+<!--Application Configuration--> 
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="row">
+
+
+
+<!-- Application Reveals -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+
+<!-- Language Configuration -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="collapse" id="collapseExample">
+
+<fieldset class="form-group">
+<label class="label label-info">Language Configuration</label>
+</fieldset>
+
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Language Configuration -->
+
+
+
+<!-- At a glance -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="collapse" id="collapseExample2">
+
+<fieldset class="form-group">
+
+<label class="label label-info"><i class="fa fa-spinner"></i></label>
+<span class="badge">42</span>
+
+<label class="label label-success"><i class="fa fa-th-list"></i></label>
+<span class="badge">22</span>
+
+<label class="label label-danger"><i class="fa fa-exclamation-triangle"></i></label>
+<span class="badge">3</span>
+
+</fieldset>
+
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- At a glance -->
+
+
+
+<!-- Application Help -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="collapse" id="collapseExample3">
+
+<fieldset class="form-group">
+<label class="label label-info">Application Help</label>
+</fieldset>
+
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Application Help -->
+
+
+
+<!-- User Panel -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="collapse" id="collapseExample4">
+
+<!-- Row start -->
+<label>Hi {{vm.user.firstName}}!</label> - <label>You're logged in!!</label>  <a href="#/login" class="btn btn-primary">Logout</a>
+
+
+<h3>All registered users:</h3>
+<ul>
+    <li ng-repeat="user in vm.allUsers">
+        {{user.username}} ({{user.firstName}} {{user.lastName}})
+        - <a href="#" ng-click="vm.deleteUser(user.id)">Delete</a>
+    </li>
+</ul>
+<!-- Row end -->
+
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- User Panel -->
+
+
+
+<!-- Application Settings -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="collapse" id="collapseExample5">
+
+<fieldset class="form-group">
+<label class="label label-info"><strong>Activate Module:</strong></label>
+</fieldset>
+
+<i class="fa fa-lg fa-fw fa-area-chart fa-2"></i>
+<input type="checkbox" id="111" ng-model="checked1" ng-init="checked1=true" />
+
+<i class="fa fa-lg fa-fw fa-cubes fa-2"></i> 
+<input type="checkbox" id="222" ng-model="checked2" ng-init="checked2=true" />
+
+<i class="fa fa-lg fa-fw fa-bar-chart-o fa-2"></i> 
+<input type="checkbox" id="333" ng-model="checked3" ng-init="checked3=true" />
+
+<i class="fa fa-lg fa-fw fa-align-left fa-2"></i> 
+<input type="checkbox" id="444" ng-model="checked4" ng-init="checked4=true" />
+
+<i class="fa fa-lg fa-fw fa-ticket fa-2"></i> 
+<input type="checkbox" id="555" ng-model="checked5" ng-init="checked5=true" />
+
+<i class="fa fa-lg fa-fw fa-users"></i> 
+<input type="checkbox" id="666" ng-model="checked6" ng-init="checked6=true" />
+
+<i class="fa fa-lg fa-fw fa-thumbs-o-up fa-2"></i> 
+<input type="checkbox" id="777" ng-model="checked7" ng-init="checked7=true" />
+
+<br>
+
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Application Settings -->
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Application Reveals -->
+</div>
+<!-- /////////////////////////////////////////////////////////////////// --> 
+<!--Application Configuration--> 
+
+
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+
+<!-- UI Panel -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="container-fluid">
+
+<!-- Nested UI TABS -->     
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+<!-- Nested UI TAB Wrappers -->     
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="panel with-nav-tabs panel-info">
+<div class="panel-heading">
+<!-- DEMO Global Nav tabs -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="view2/#Welcome" title="HOME" aria-controls="Welcome" role="tab" data-toggle="tab">
+<i class="fa fa-lg fa-fw fa fa-home fa-2"></i>
+</a></li>
+<li role="presentation"><a href="view2/#ConfigureJob" title="CONFIGURE JOB" aria-controls="ConfigureJob" role="tab" data-toggle="tab">
+<i class="fa fa-lg fa-fw fa fa-database fa-2"></i>
+</a></li>
+
+<li role="presentation"><a href="view2/#ManageJobs" title="MANAGE JOBS" aria-controls="ManageJobs" role="tab" data-toggle="tab">
+<i class="fa fa-lg fa-fw fa fa-tasks fa-2"></i>
+</a></li>
+<li role="presentation"><a href="view2/#ManageReports" title="MANAGE REPORTS" aria-controls="ManageReports" role="tab" data-toggle="tab">
+<i class="fa fa-lg fa-fw fa fa-files-o fa-2"></i>
+</a></li>
+</ul>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- DEMO Global Nav tabs -->
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Nested UI TAB Wrappers -->     
+
+
+
+<!-- Nested UI TAB Inside Wrappers -->     
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="panel-body">
+<!-- DEMO Global Tab Panes -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="tab-content">
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Tab panes Welcome -->
+<div role="tabpanel" class="tab-pane fade in active" id="Welcome">
+
+
+
+<!--Application Area 1-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="container">
+<div class="row">
+
+      
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Carousel
+    ================================================== -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Indicators -->
+<ol class="carousel-indicators">
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+<li data-target="#myCarousel" data-slide-to="3"></li>
+<li data-target="#myCarousel" data-slide-to="4"></li>
+<li data-target="#myCarousel" data-slide-to="5"></li>
+<li data-target="#myCarousel" data-slide-to="6"></li>
+
+</ol>
+<!-- Indicators -->
+<!-- /////////////////////////////////////////////////////////////////// -->     
+      
+<div class="carousel-inner" role="listbox"> 
+   
+<!-- /////////////////////////////////////////////////////////////////// -->   
+<!--Slide 1-->
+<div class="item active">
+<img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+<div class="container">
+<div class="carousel-caption">
+<h1>TREND ANALYSIS</h1>
+<p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+</div>
+</div>
+</div>
+<!--Slide 1-->
+<!-- /////////////////////////////////////////////////////////////////// -->        
+              
+<!-- /////////////////////////////////////////////////////////////////// -->  
+<!--Slide 2-->      
+<div class="item">
+<img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+<div class="container">
+<div class="carousel-caption">
+<h1>CONSOLIDATION</h1>
+<p>Donec id elit non mi porta gravida at eget metus.</p>
+<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+</div>
+</div>
+</div>
+<!--Slide 2-->
+<!-- /////////////////////////////////////////////////////////////////// -->        
+             
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Slide 3-->       
+<div class="item">
+<img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+<div class="container">
+<div class="carousel-caption">
+<h1>DEMAND FORECASTING</h1>
+<p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+</div>
+</div>
+</div>
+<!--Slide 3-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Slide 4-->       
+<div class="item">
+<img class="fourth-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="fourth slide">
+<div class="container">
+<div class="carousel-caption">
+<h1>MENU ITEM ASSORTMENT</h1>
+<p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+</div>
+</div>
+</div>
+<!--Slide 4-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Slide 5-->       
+<div class="item">
+<img class="fith-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="fith slide">
+<div class="container">
+<div class="carousel-caption">
+<h1>CAMPAIGN MANAGEMENT</h1>
+<p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+</div>
+</div>
+</div>
+<!--Slide 5-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Slide 6-->       
+<div class="item">
+<img class="six-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="six slide">
+<div class="container">
+<div class="carousel-caption">
+<h1>CUSTOMER ATTRITION</h1>
+<p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+</div>
+</div>
+</div>
+<!--Slide 6-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Slide 7-->       
+<div class="item">
+<img class="seven-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="seven slide">
+<div class="container">
+<div class="carousel-caption">
+<h1>RECOMMENDATION</h1>
+<p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+<p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+</div>
+</div>
+</div>
+<!--Slide 7-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+</div>
+      
+<!-- /////////////////////////////////////////////////////////////////// --> 
+<!--Left -->  
+<!--  
+<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+-->
+<!--Left-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Right-->
+<!--
+<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+-->
+<!--Right-->
+<!-- /////////////////////////////////////////////////////////////////// -->      
+      
+</div><!-- /.carousel -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+      
+</div>
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Application Area 1-->
+
+
+
+<!--Application Area 2-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="container">
+  <div class="row">
+    <div class="text-center col-sm-6">
+      <h3>Lorem ipsum</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, magnam?</p>
+      <a class="btn btn-danger btn-lg" href="#" role="button">Tutorials</a></div>
+    <div class="text-center col-sm-6">
+      <h3>Lorem ipsum</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, magnam?</p>
+      <a class="btn btn-info btn-lg" href="#" role="button">Documentation</a></div>
+  </div>
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Application Area 2-->
+
+
+
+<!--Application Area 3-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <h2><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis accusamus praesentium eveniet ad unde doloremque ex officia eius ab quibusdam.</p>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <h2><span class="glyphicon glyphicon-music" aria-hidden="true"></span> Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, mollitia natus amet eligendi consequuntur. Veritatis ullam debitis voluptas repellat laboriosam.</p>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <h2><span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span> Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, error, itaque non vel architecto ratione obcaecati doloribus delectus illum harum?</p>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <h2><span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> Lorem ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, nam voluptate accusantium nulla distinctio odit aliquam voluptatem ab. Earum, voluptatibus.</p>
+    </div>
+  </div>
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Application Area 3-->
+
+
+
+<!--Application Area 4-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="thumbnail"> <img src="images/600X300.gif" alt="Thumbnail Image 1" class="img-responsive">
+        <div class="caption">
+          <h3>Feature</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, at.</p>
+          <hr>
+          <p><a href="#" class="btn btn-success" role="button">Button</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="thumbnail"> <img src="images/600X300.gif" alt="Thumbnail Image 1" class="img-responsive">
+        <div class="caption">
+          <h3>Feature</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, atque.</p>
+          <hr>
+          <p><a href="#" class="btn btn-success" role="button">Button</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Application Area 4-->
+
+
+
+<!--Application Area 5-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="container">
+  <div class="row">
+    <h1>Pricing Table</h1>
+    <hr>
+    <div class="col-lg-3 col-sm-6">
+      <div class="panel panel-default panel-success"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          <h3>Free</h3>
+        </div>
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Lorem ipsum dolor sit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1 ......</th>
+            </tr>
+            <tr>
+              <th scope="row">2 ......</th>
+            </tr>
+            <tr>
+              <th scope="row">3 ......</th>
+            </tr>
+            <tr>
+              <th scope="row"><p class="text-center"><a href="" class="btn-success btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy Now</a></p></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="panel panel-default panel-warning"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          <h3>Basic</h3>
+        </div>
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Lorem ipsum dolor sit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1 ......</th>
+            </tr>
+            <tr>
+              <th scope="row">2 ......</th>
+            </tr>
+            <tr>
+              <th scope="row">3 ......</th>
+            </tr>
+            <tr>
+              <th scope="row"><p class="text-center"><a href="" class="btn-warning btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy Now</a></p>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="panel panel-default panel-info"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          <h3>Professional</h3>
+        </div>
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Lorem ipsum dolor sit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1 ......</th>
+            </tr>
+            <tr>
+              <th scope="row">2 ......</th>
+            </tr>
+            <tr>
+              <th scope="row">3 ......</th>
+            </tr>
+            <tr>
+              <th scope="row"><p class="text-center"><a href="" class="btn-info btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy Now</a></p></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="panel panel-default panel-danger"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          <h3>Enterprise</h3>
+        </div>
+        <!-- Table -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Lorem ipsum dolor sit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1 ......</th>
+            </tr>
+            <tr>
+              <th scope="row">2 ......</th>
+            </tr>
+            <tr>
+              <th scope="row">3 ......</th>
+            </tr>
+            <tr>
+              <th scope="row"><p class="text-center"><a href="" class="btn-danger btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy Now</a></p></th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Application Area 5-->
+
+
+
+<!--Application Area 6-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="container">
+  <div class="row">
+<div class="col-lg-4 col-md-6 col-sm-6">
+      <h2>Contact Us</h2>
+      <address>
+      <strong>MyCompany, Inc.</strong><br>
+      Sunny Autumn Plaza, Grand Coulee,<br>
+      CA, 91308-4075, US<br>
+      <abbr title="Phone">P:</abbr> (123) 456-7890
+      </address>
+      <h4>Social</h4>
+      <div class="row">
+        <div class="col-xs-2"><img class="img-circle" src="images/32X32.gif" alt=""></div>
+        <div class="col-xs-2"><img class="img-circle" src="images/32X32.gif" alt=""></div>
+        <div class="col-xs-2"><img class="img-circle" src="images/32X32.gif" alt=""></div>
+        <div class="col-xs-2"><img class="img-circle" src="images/32X32.gif" alt=""></div>        
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-6">
+      <h2>Testimonials</h2>
+      <div class="media">
+        <div class="media-left"> <a href="#"> <img class="media-object" src="images/35X35.gif" alt="..."> </a> </div>
+        <div class="media-body">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+      </div>
+      <div class="media">
+        <div class="media-left"> <a href="#"> <img class="media-object" src="images/35X35.gif" alt="..."> </a> </div>
+        <div class="media-body">
+          <h4 class="media-heading">Media heading</h4>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-12">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, voluptates, soluta velit nostrum ut iste exercitationem vitae ipsum repellendus laudantium ab possimus nemo odio cumque illum nulla laborum blanditiis unde.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, voluptates, soluta velit nostrum ut iste exercitationem vitae ipsum repellendus laudantium ab possimus nemo odio cumque illum nulla laborum blanditiis unde.</p>
+    </div>
+  </div>
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Application Area 6-->
+
+
+
+</div>
+<!-- Tab panes Welcome -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Tab panes Configure Job -->
+<div role="tabpanel" class="tab-pane fade in" id="ConfigureJob">
+
+
+<!-- Task form UI -->
+<h1>Configure Job</h1>
+
+
+<div class="panel with-nav-tabs panel-success">
+<div class="panel-heading">
+<!-- Nav tabs -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<ul class="nav nav-tabs" role="tablist">
+<!-- /////////////////////////////////////////////////////////////////// -->
+<li role="presentation" ng-if="checked1" class="animate-if">
+<a href="view2/#1" title="TREND ANALYSIS 333" aria-controls="1" role="tab" data-toggle="tab">
+<i class="fa fa-lg fa-fw fa-area-chart fa-2"></i>
+</a>
+</li>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<li role="presentation" ng-if="checked2" class="animate-if">
+<a href="view2/#2" title="CONSOLIDATION" aria-controls="2" role="tab" data-toggle="tab">
+<i class="fa fa-lg fa-fw fa-cubes fa-2"></i>
+</a>
+</li>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<li role="presentation" ng-if="checked3" class="animate-if">
+<a href="view2/#3" title="DEMAND FORECASTING" aria-controls="3" role="tab" data-toggle="tab">
+<i class="fa fa-lg fa-fw fa-bar-chart-o fa-2">
+</i>
+</a>
+</li>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<li role="presentation" ng-if="checked4" class="animate-if">
+<a href="view2/#4" title="MENU ITEM ASSORTMENT" aria-controls="4" role="tab" data-toggle="tab">
+<i class="fa fa-lg fa-fw fa-align-left fa-2"></i>
+</a>
+</li>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<li role="presentation" ng-if="checked5" class="animate-if">
+<a href="view2/#5" title="CAMPAIGN MANAGEMENT" aria-controls="5" role="tab" data-toggle="tab">
+<i class="fa fa-lg fa-fw fa-ticket fa-2"></i>
+</a>
+</li>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<li role="presentation" ng-if="checked6" class="animate-if">
+<a href="view2/#6" title="CUSTOMER ATTRITION" aria-controls="6" role="tab" data-toggle="tab">
+<i class="fa fa-lg fa-fw fa-users"></i>
+</a>
+</li>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<li role="presentation" ng-if="checked7" class="animate-if">
+<a href="view2/#7" title="RECOMMENDATION" aria-controls="7" role="tab" data-toggle="tab">
+<i class="fa fa-lg fa-fw fa-thumbs-o-up fa-2"></i>
+</a>
+</li>
+
+</ul>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Nav tabs -->
+</div>
+
+
+<div class="panel-body">
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="tab-content">
+
+
+
+<!--TREND ANALYSIS-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div ng-if="checked1" role="tabpanel" class="tab-pane active" id="1">
+<h3>TREND ANALYSIS</h3>
+
+<hr>
+
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--TREND ANALYSIS-->
+
+
+
+<!--CONSOLIDATION-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div ng-if="checked2" role="tabpanel" class="tab-pane fade" id="2">
+<h3>CONSOLIDATION</h3>
+<hr>
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--CONSOLIDATION-->
+
+
+
+<!--DEMAND FORECASTING-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div ng-if="checked3" role="tabpanel" class="tab-pane fade" id="3">
+<h3>DEMAND FORECASTING</h3>
+<hr>
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--DEMAND FORECASTING-->
+
+
+
+<!--MENU ITEM ASSORTMENT-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div ng-if="checked4" role="tabpanel" class="tab-pane fade" id="4">
+<h3>MENU ITEM ASSORTMENT</h3>
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="container-fluid">
+<!--Left-->
+<div class="col-md-6">
+<div class="panel panel-default">
+<div class="panel-body">
+
+<form ng-submit="submit()" class="form-horizontal">
+
+<!--Feed Management Here-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<fieldset class="form-group">
+<label>Upload required files below</label>
+<div class="input-group">
+
+<!--<div tabindex="500" class="form-control file-caption  kv-fileinput-caption">
+<div class="file-caption-name" title="The Moon and the Earth" contenteditable="false"><span class="glyphicon glyphicon-file kv-caption-icon"></span>BILLBODY</div>
+</div>-->
+
+<label>BILLBODY</label>
+
+<div class="input-group-btn">
+
+<button type="submit" tabindex="500" title="Upload selected files" class="btn btn-default fileinput-upload fileinput-upload-button"><i class="glyphicon glyphicon-folder-open"></i> <span class="hidden-xs">Upload</span></button>
+
+
+<!-- Selection Details -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="view2/#FeedDetails" aria-expanded="false" aria-controls="view2/FeedDetails">
+<i class="fa fa-info-circle"></i>
+</a>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Selection Details -->
+
+</div>
+
+</div>
+
+<div class="collapse" id="FeedDetails">
+
+<label>Data Status</label>
+<div class="progress">
+<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+<span class="sr-only">40% Complete (success)</span>
+</div>
+</div>
+
+<!--1-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+Uploaded Data: <br>
+
+Status: <span class="label label-success">Ready</span>
+<br>
+File Format: <span class="label label-info">csv</span>
+<br>
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+
+</div>
+
+</fieldset>
+
+<hr>
+
+<!--Feed Management Here-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+<!--Feed Management Here 2-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<fieldset class="form-group">
+<!--<label>BILL</label>-->
+<div class="input-group ">
+
+<!--<div tabindex="500" class="form-control file-caption  kv-fileinput-caption">
+<div class="file-caption-name" title="The Moon and the Earth"><span class="glyphicon glyphicon-file kv-caption-icon"></span>BILL</div>
+</div>-->
+
+<label>BILL</label>
+
+
+<div class="input-group-btn">
+<!--<button type="button" tabindex="500" title="Clear selected files" class="btn btn-default fileinput-remove fileinput-remove-button"><i class="glyphicon glyphicon-trash"></i> <span class="hidden-xs">Remove</span></button>
+
+<button type="button" tabindex="500" title="Abort ongoing upload" class="btn btn-default hide fileinput-cancel fileinput-cancel-button"><i class="glyphicon glyphicon-ban-circle"></i> <span class="hidden-xs">Cancel</span></button>-->
+
+<button type="submit" tabindex="500" title="Upload selected files" class="btn btn-default fileinput-upload fileinput-upload-button"><i class="glyphicon glyphicon-folder-open"></i> <span class="hidden-xs">Upload</span></button>
+
+<!--<div tabindex="500" class="btn btn-primary btn-file"><i class="glyphicon glyphicon-folder-open"></i> <span class="hidden-xs">Browse …</span><input id="input-22" name="input22" type="file" multiple class=""></div>-->
+
+<!-- Selection Details -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="view2/#FeedDetails2" aria-expanded="false" aria-controls="view2/FeedDetails2">
+<i class="fa fa-info-circle"></i>
+</a>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Selection Details -->
+
+</div>
+</div>
+
+
+
+<div class="collapse" id="FeedDetails2">
+
+<label>Data Status</label>
+<div class="progress">
+<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+<span class="sr-only">40% Complete (success)</span>
+</div>
+</div>
+
+Status: <span class="label label-success">Ready</span>
+<br>
+File Format: <span class="label label-info">csv</span>
+<br>
+<strong>Uploaded Data:</strong> <br>
+numRecords: <span class="label label-info">508810</span>
+<br>
+tablename: <span class="label label-info">Bill</span>
+<br>
+Start Time:<span class="label label-info">2014-01-01T10:37:5</span>
+<br>
+End Time:<span class="label label-info">2014-05-23T10:55:15</span>
+<br>
+Temporal:<span class="label label-info">false</span>
+<br>
+Last Update:<span class="label label-info">2015-08-31T17:17:45</span>
+<br>
+
+
+
+</div>
+
+</fieldset>
+
+<hr>
+
+<!--Feed Management Here 2-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+<!--Feed Management Here 3-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<fieldset class="form-group">
+<!--<label>STORE</label>-->
+<div class="input-group ">
+
+<!--<div tabindex="500" class="form-control file-caption  kv-fileinput-caption">
+<div class="file-caption-name" title="The Moon and the Earth"><span class="glyphicon glyphicon-file kv-caption-icon"></span>STORE</div>
+</div>
+-->
+
+<label>STORE</label>
+
+<div class="input-group-btn">
+<!--<button type="button" tabindex="500" title="Clear selected files" class="btn btn-default fileinput-remove fileinput-remove-button"><i class="glyphicon glyphicon-trash"></i> <span class="hidden-xs">Remove</span></button>
+
+<button type="button" tabindex="500" title="Abort ongoing upload" class="btn btn-default hide fileinput-cancel fileinput-cancel-button"><i class="glyphicon glyphicon-ban-circle"></i> <span class="hidden-xs">Cancel</span></button>-->
+
+<button type="submit" tabindex="500" title="Upload selected files" class="btn btn-default fileinput-upload fileinput-upload-button"><i class="glyphicon glyphicon-folder-open"></i> <span class="hidden-xs">Upload</span></button>
+
+<!--<div tabindex="500" class="btn btn-primary btn-file"><i class="glyphicon glyphicon-folder-open"></i> <span class="hidden-xs">Browse …</span><input id="input-33" name="input33" type="file" multiple class=""></div>-->
+
+<!-- Selection Details -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="view2/#FeedDetails3" aria-expanded="false" aria-controls="view2/FeedDetails3">
+<i class="fa fa-info-circle"></i>
+</a>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Selection Details -->
+
+</div>
+</div>
+
+
+
+<div class="collapse" id="FeedDetails3">
+
+<label>Data Status</label>
+<div class="progress">
+<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+<span class="sr-only">40% Complete (success)</span>
+</div>
+</div>
+
+<!--3-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+Status: <span class="label label-success">Ready</span>
+<br>
+File Format: <span class="label label-info">csv</span>
+<br>
+Uploaded Data: <br>
+<span class="label label-info">Data that will be analyzed contains 20 records.</span>
+<br>
+<span class="label label-info">Uploaded data contains 20 records.</span>
+<br>
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+</div>
+
+</fieldset>
+
+<hr>
+
+<!--Feed Management Here 3-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+<!--Feed Management Here 4-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<fieldset class="form-group">
+<!--<label>DISH</label>-->
+<div class="input-group ">
+
+<!--<div tabindex="500" class="form-control file-caption  kv-fileinput-caption">
+<div class="file-caption-name" title="The Moon and the Earth"><span class="glyphicon glyphicon-file kv-caption-icon"></span>DISH</div>
+</div>-->
+
+<label>DISH</label>
+
+<div class="input-group-btn">
+<!--<button type="button" tabindex="500" title="Clear selected files" class="btn btn-default fileinput-remove fileinput-remove-button"><i class="glyphicon glyphicon-trash"></i> <span class="hidden-xs">Remove</span></button>
+
+<button type="button" tabindex="500" title="Abort ongoing upload" class="btn btn-default hide fileinput-cancel fileinput-cancel-button"><i class="glyphicon glyphicon-ban-circle"></i> <span class="hidden-xs">Cancel</span></button>-->
+
+<button type="submit" tabindex="500" title="Upload selected files" class="btn btn-default fileinput-upload fileinput-upload-button"><i class="glyphicon glyphicon-folder-open"></i> <span class="hidden-xs">Upload</span></button>
+
+<!--<div tabindex="500" class="btn btn-primary btn-file"><i class="glyphicon glyphicon-folder-open"></i> <span class="hidden-xs">Browse …</span><input id="input-44" name="input44" type="file" multiple class=""></div>-->
+
+<!-- Selection Details -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="view2/#FeedDetails4" aria-expanded="false" aria-controls="view2/FeedDetails4">
+<i class="fa fa-info-circle"></i>
+</a>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Selection Details -->
+
+</div>
+</div>
+
+
+
+<div class="collapse" id="FeedDetails4">
+
+<label>Data Status</label>
+<div class="progress">
+<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+<span class="sr-only">40% Complete (success)</span>
+</div>
+</div>
+
+Status: <span class="label label-success">Ready</span>
+<br>
+File Format: <span class="label label-info">csv</span>
+<br>
+Uploaded Data: <br>
+<span class="label label-info">Data that will be analyzed contains 393 records.</span>
+<br>
+<span class="label label-info">Uploaded data contains 393 records.</span>
+<br>
+
+
+
+</div>
+
+</fieldset>
+
+<hr>
+
+<!--Feed Management Here 4-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+<!--Feed Management Here 5-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<fieldset class="form-group">
+<!--<label>IMAGE</label>-->
+<div class="input-group ">
+
+<!--<div tabindex="500" class="form-control file-caption  kv-fileinput-caption">
+<div class="file-caption-name" title="The Moon and the Earth"><span class="glyphicon glyphicon-file kv-caption-icon"></span>IMAGE</div>
+</div>-->
+
+<label>IMAGE</label>
+
+<div class="input-group-btn">
+<!--<button type="button" tabindex="500" title="Clear selected files" class="btn btn-default fileinput-remove fileinput-remove-button"><i class="glyphicon glyphicon-trash"></i> <span class="hidden-xs">Remove</span></button>
+
+<button type="button" tabindex="500" title="Abort ongoing upload" class="btn btn-default hide fileinput-cancel fileinput-cancel-button"><i class="glyphicon glyphicon-ban-circle"></i> <span class="hidden-xs">Cancel</span></button>-->
+
+<button type="submit" tabindex="500" title="Upload selected files" class="btn btn-default fileinput-upload fileinput-upload-button"><i class="glyphicon glyphicon-folder-open"></i> <span class="hidden-xs">Upload</span></button>
+
+<!--<div tabindex="500" class="btn btn-primary btn-file"><i class="glyphicon glyphicon-folder-open"></i> <span class="hidden-xs">Browse …</span><input id="input-55" name="input55" type="file" multiple class=""></div>-->
+
+<!-- Selection Details -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="view2/#FeedDetails5" aria-expanded="false" aria-controls="view2/FeedDetails5">
+<i class="fa fa-info-circle"></i>
+</a>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Selection Details -->
+
+</div>
+</div>
+
+
+
+<!-- Selection Reveal 5 -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="collapse" id="FeedDetails5">
+
+<label>Data Status</label>
+<div class="progress">
+<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+<span class="sr-only">40% Complete (success)</span>
+</div>
+</div>
+
+Status: <span class="label label-success">Ready</span>
+<br>
+File Format: 
+<span class="label label-info">zip</span>
+<span class="label label-info">tar</span>
+<span class="label label-info">tar.gz</span>
+<span class="label label-info">tar.bz2</span>
+
+
+<br>
+Uploaded Data: <br>
+<span class="label label-info">Data that will be analyzed contains 26 records.</span>
+<br>
+<span class="label label-info">Uploaded data contains 26 records.</span>
+<br>
+
+
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Selection Reveal 5 -->
+
+
+</fieldset>
+
+<hr>
+
+<!--Feed Management Here 5-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+
+</form>
+
+
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Step 1-->
+
+</div>
+</div>
+</div>
+<!--Right-->
+<div class="col-md-6">
+<div class="panel panel-default">
+<div class="panel-body">
+
+
+<form ng-submit="submit()" class="form-horizontal">
+<fieldset>
+
+
+
+
+<!--Name Job Request-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<fieldset class="form-group">
+<label for="formGroupExampleInput">Name Job Request</label>
+<input type="text" data-style="btn-info" class="form-control input-lg" id="formGroupExampleInput" placeholder="Name Job Request">
+</fieldset>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Name Job Request-->
+
+
+
+<!-- Countries Selection -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<fieldset class="form-group">
+<label for="exampleSelect2">Countries</label>
+<select class="form-control input-lg" id="exampleSelect2" required>
+<option selected></option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+</fieldset>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Countries Selection -->
+
+
+
+<!-- State / Province Selection -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<fieldset class="form-group">
+<label for="exampleSelect3">State / Province</label>
+<select class="form-control input-lg" id="exampleSelect3" required>
+<option selected></option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+</fieldset>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- State / Province Selection -->
+
+
+
+<!-- Cities Selection -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<fieldset class="form-group">
+<label for="exampleSelect4">Cities</label>
+<select class="form-control input-lg" id="exampleSelect4" required>
+<option selected></option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+</fieldset>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Cities Selection -->
+
+
+
+<!-- Data Range Selection -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<fieldset class="form-group">
+<label for="exampleSelect2">Data Range</label>
+<div class="input-group input-daterange">
+<input type="text" class="form-control input-lg" value="2012-04-05">
+<span class="input-group-addon">to</span>
+<input type="text" class="form-control input-lg" value="2012-04-19">
+</div>
+</fieldset>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Data Range Selection -->
+
+
+
+<!-- Job Priority Selection -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<fieldset class="form-group">
+<label for="exampleSelect5">Job Priority</label>
+<select class="form-control input-lg" id="exampleSelect5" required>
+<option selected></option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+</select>
+</fieldset>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Job Priority Selection -->
+
+
+
+<!--Crud -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<p class="text-center">
+<!--<a class="btn btn-primary btn-lg" href="#" role="button" title="Edit"><i class="fa fa-pencil-square"></i></a>-->
+<a class="btn btn-success btn-lg" href="#" role="button" title="New"><i class="fa fa-plus-square"></i>&nbsp;Run Analysis</a>
+<!--<a class="btn btn-warning btn-lg" href="#" role="button" title="Delete"><i class="fa fa-trash"></i></a>-->
+</p>
+<!--Crud -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+</fieldset>
+</form>
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Step 2-->
+
+</div>
+</div>
+</div>
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="container-fluid">
+<!--Bottom-->
+<div class="col-md-12">
+<div class="panel panel-default">
+  <div class="panel-body">
+
+<!--Collapse UI-->  
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+<strong>Possible additional Details</strong>
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Collapse UI-->
+  
+  </div>
+</div>
+</div>
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--MENU ITEM ASSORTMENT-->
+
+
+
+<!--CAMPAIGN MANAGEMENT-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div ng-if="checked5" role="tabpanel" class="tab-pane fade" id="5">
+<h3>CAMPAIGN MANAGEMENT</h3>
+<hr>
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--CAMPAIGN MANAGEMENT-->
+
+
+
+<!--CUSTOMER ATTRITION-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div ng-if="checked6" role="tabpanel" class="tab-pane fade" id="6">
+<h3>CUSTOMER ATTRITION</h3>
+<hr>
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--CUSTOMER ATTRITION-->
+
+
+
+<!--RECOMMENDATION-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div ng-if="checked7" role="tabpanel" class="tab-pane fade" id="7">
+<h3>RECOMMENDATION</h3>
+<hr>
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--RECOMMENDATION-->
+
+
+
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Tab panes -->
+</div>
+</div>
+
+
+
+
+
+<!-- Task form UI -->
+</div>
+<!-- Tab panes Configure Job -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Tab panes Manage Jobs -->
+<div role="tabpanel" class="tab-pane fade in" id="ManageJobs">
+
+<h1>Manage Jobs</h1>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<fieldset class="form-group">
+<label>Job 1</label>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">40% Complete (success)</span>
+  </div>
+</div>
+</fieldset>
+
+<fieldset class="form-group">
+<label>Job 2</label>
+<div class="progress">
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+    <span class="sr-only">20% Complete</span>
+  </div>
+</div>
+</fieldset>
+
+<fieldset class="form-group">
+<label>Job 3</label>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete (warning)</span>
+  </div>
+</div>
+</fieldset>
+
+<fieldset class="form-group">
+<label>Job 4</label>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    <span class="sr-only">80% Complete (danger)</span>
+  </div>
+</div>
+</fieldset>
+
+<fieldset class="form-group">
+<label>Job 5</label>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">40% Complete (success)</span>
+  </div>
+</div>
+</fieldset>
+
+<!-- /////////////////////////////////////////////////////////////////// --> 
+
+</div>
+<!-- Tab panes Manage Jobs -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Tab panes Manage Reports -->
+<div role="tabpanel" class="tab-pane" id="ManageReports">
+
+<h1>Reports</h1>
+
+<!--Application Optinal-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<section class="well">
+<h2 class="text-center">At a glance</h2>
+<hr>
+<div class="container">
+
+<!--Chart Sample-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div id="ChartSample" style="min-width: 98%; height: 400px; margin: 0 auto"></div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Chart Sample-->
+
+</div>
+</section>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Application Optional-->
+
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Tab panes Manage Reports -->
+
+
+
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Nested UI TABS -->
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Nested UI TAB Inside Wrappers -->     
+
+
+
+
+</div>
+
+
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- UI Panel -->
+
+
+
+<!-- Doc ready Function (ToolTips, Popovers) --> 
+<!-- /////////////////////////////////////////////////////////////////// -->
+<script>
+$(document).ready(function(){
+
+// UI Pop 1
+// //////////////////////////////////////////////////////
+$('.LanguagePreference').popover({ 
+html : true,
+content: function() {
+return $('#popover_content_wrapper').html();
+}
+});
+
+// UI Pop 2
+// //////////////////////////////////////////////////////
+$('.ataglance').popover({ 
+html : true,
+content: function() {
+return $('#popover_content_wrapper2').html();
+}
+});
+
+// UI Pop 3
+// //////////////////////////////////////////////////////
+$('.help').popover({ 
+html : true,
+content: function() {
+return $('#popover_content_wrapper3').html();
+}
+});
+
+// UI Pop 4
+// //////////////////////////////////////////////////////
+$('.user').popover({ 
+html : true,
+content: function() {
+return $('#popover_content_wrapper4').html();
+}
+});
+
+// UI Pop 5
+// //////////////////////////////////////////////////////
+$('.settings').popover({ 
+html : true,
+content: function() {
+return $('#popover_content_wrapper5').html();
+}
+});
+
+// Tabs UI Pop
+// //////////////////////////////////////////////////////
+$('[data-toggle="tab"]').tooltip({
+trigger: 'hover',
+placement: 'top',
+animate: true,
+delay: 500,
+container: 'body'
+});
+
+
+    
+});
+
+console.log ( 'DEMO UI Loaded' );
+
+</script>
+<!-- Doc ready Function --> 
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+
+<!--Enable touch events-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<script>  
+$(document).ready(function() {  
+   $("#myCarousel").swiperight(function() {  
+      $("#myCarousel").carousel('prev');  
+    });  
+   $("#myCarousel").swipeleft(function() {  
+      $("#myCarousel").carousel('next');  
+   });  
+});  
+
+console.log ( 'DEMO Touch Enabled' );
+
+</script> 
+<!-- /////////////////////////////////////////////////////////////////// --> 
+<!--Enable touch events-->
+
+
+
+<!--Sample Chart Fucntion-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<script type="text/javascript">
+$(function () {
+    $('#ChartSample').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Monthly Average Rainfall'
+        },
+        subtitle: {
+            text: 'Source: WorldClimate.com'
+        },
+        xAxis: {
+            categories: [
+                'Jan',
+                'Feb',
+                'Mar',
+                'Apr',
+                'May',
+                'Jun',
+                'Jul',
+                'Aug',
+                'Sep',
+                'Oct',
+                'Nov',
+                'Dec'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Rainfall (mm)'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Tokyo',
+            data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+
+        }, {
+            name: 'New York',
+            data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+
+        }, {
+            name: 'London',
+            data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+
+        }, {
+            name: 'Berlin',
+            data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+
+        }]
+    });
+});
+</script>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Chart Testing Function-->  

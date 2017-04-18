@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="app" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="app" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="app" class="no-js"> <!--<![endif]-->
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+
+
+
+<!--Application Title-->
+<title>DEMO Core Shell 1K</title>
+<!--Application Title-->
+
+
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome-4.5.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/MasterBranding.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+<!--Primary Application View Navigation--> 
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="jumbotron">
+
+<!--Start Nested shell-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div class="container">
+
+<!--Start Content Wrapper-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+
+<!--Start Feedback Wrapper-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--End Feedback Wrapper-->
+
+
+<!-- Primary Application Content View Panel (Default is Home) -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<div ng-view></div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Primary Application Content View Panel (Default is Home) -->
+
+
+
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--End Content Wrapper-->
+
+
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--End Nested shell-->
+
+</div>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Primary Application View Navigation-->    
+    
+
+
+<!--Core Application libs-->   
+<!-- /////////////////////////////////////////////////////////////////// -->
+<script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="//code.angularjs.org/1.2.20/angular.js"></script>
+<script src="//code.angularjs.org/1.2.20/angular-route.js"></script>
+<script src="//code.angularjs.org/1.2.13/angular-cookies.js"></script>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<script src="app.js"></script>
+<script src="app-services/authentication.service.js"></script>
+<script src="app-services/flash.service.js"></script>
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- DEMO Real user service that uses an api -->
+<!-- <script src="app-services/user.service.js"></script> -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+
+<!--For DEMO this is the active one.-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- Fake user service for demo that uses local storage -->
+<script src="app-services/user.service.local-storage.js"></script>
+<!-- Fake user service for demo that uses local storage -->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--For DEMO this is the active one.-->
+
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+<script src="home/home.controller.js"></script>
+<script src="login/login.controller.js"></script>
+<script src="register/register.controller.js"></script>
+<!-- /////////////////////////////////////////////////////////////////// --> 
+
+
+
+<!--Service Calls File-->
+<!-- /////////////////////////////////////////////////////////////////// --> 
+<script src="js/angular-resource.js"></script>
+<script src="js/services.js"></script>
+<!-- /////////////////////////////////////////////////////////////////// --> 
+<!--Service Calls File-->
+
+
+  
+<!-- DEMO Application Footer-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright &copy; DEMO 2017. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!-- DEMO Application Footer-->
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<!-- /////////////////////////////////////////////////////////////////// -->
+<script src="js/jquery-1.11.3.min.js"></script> 
+<script src="js/jquery.mobile.custom.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+
+<!--Chart Testing-->
+<!-- /////////////////////////////////////////////////////////////////// -->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<!-- /////////////////////////////////////////////////////////////////// -->
+<!--Chart Testing-->
+   
+</body>
+</html>
